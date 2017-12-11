@@ -1,0 +1,17 @@
+html {
+    background-color: #eee
+}
+
+.video {
+    padding: 4em; 
+    border-top: 1px solid #eee
+}
+
+.feed {
+    background-color: #fff;
+}
+
+.feed-form {
+    padding:4em; 
+    background-color: #fbfbfb;
+}

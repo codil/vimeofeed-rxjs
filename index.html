@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Vimeo feed</title>
+        <link rel="stylesheet" href="dist/css/bulma.css">
+        <link rel="stylesheet" href="dist/css/app.css">
+    </head>
+    <body>
+        <div  class="container" style="padding: 2em 0" id="app">
+            <div class="form feed-form">
+                <div class="field filter-desc">
+                    <div class="control">
+                        <input class="input" type="text" placeholder="Filter by description">
+                    </div>
+                </div>
+                <div class="field filter-likes">
+                    <label class="checkbox" for="filter-likes-chk">
+                        <input class="checkbox" id="filter-likes-chk" type="checkbox">
+                        Show only videos from users with more than 10 likes
+                    </label>
+                </div>
+                <div class="per-page">
+                    <div class="field">
+                            <p>Results per page:</p>
+                    </div>
+                    <div class="field is-grouped">
+                        <div class="control"><button class="button is-primary is-outlined is rounded" data-n=10>10</button></div>
+                        <div class="control"><button class="button is-primary is-outlined is rounded" data-n=25>25</button></div>
+                        <div class="control"><button class="button is-primary is-outlined is rounded" data-n=50>50</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="feed">
+                <ul id="videos"></ul>
+                <div class="field is-narrow" style="padding: 4em 2em">
+                    <div class="control" style="text-align: center"><button class="button is-primary" id="next">Next</button></div>
+                </div>
+            </div>
+        </div>
+        <script src="dist/js/bundle.js"></script>
+    </body>
+</html>
